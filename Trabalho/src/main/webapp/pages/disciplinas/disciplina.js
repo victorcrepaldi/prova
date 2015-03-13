@@ -36,7 +36,7 @@ function DisciplinaController($scope,$http) {
     }
     
     function funcaoSalvar() {
-        if($scope.novo){
+        if($scope.salvar){
             $http.post("/disciplinas").success(onSuccess).error(onError);
         }else{
             $http.put("/disciplinas").success(onSuccess).error(onError);
