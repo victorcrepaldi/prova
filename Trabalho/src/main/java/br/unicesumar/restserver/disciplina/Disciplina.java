@@ -77,6 +77,11 @@ private Double peso;
         }
         return true;
     }
+
+    @Override
+    public String toString() {
+        return "Disciplina{" + "id=" + id + ", nome=" + nome + ", cargaHoraria=" + cargaHoraria + ", peso=" + peso + '}';
+    }
     
 }
 
